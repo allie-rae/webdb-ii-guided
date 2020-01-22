@@ -25,3 +25,10 @@ PostgreSQL -> postgresql://
 - can modify db objects
 - live together with your application code. Pushed to source control (Git)
 - written in JS 
+
+## Songs table schema
+- id: primary key, integer, auto-increment 
+- name: string, not unique, max size of 255, indexed (an index is a way of making searched on this column faster)
+- duration: integer (stored in seconds)
+- artist: string, indexed
+- favorite: boolean, default value: false
